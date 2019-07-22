@@ -12,39 +12,45 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -107,13 +113,27 @@ nav a {
 
 .top-content .text-container {
     width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;
+    padding: 0 1% 20px;
+}
+
+.top-content .about.text-container {
+    width: 96%;
+    padding: 0 0.73% 20px;
+
+    font-size: 0.998em;
 }
 
 .middle-content {
     margin-bottom: 20px;
+
     border-bottom: 1px dashed black;
+}
+
+.about-middle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 2% 0;
 }
 
 .middle-content h2 {
@@ -180,10 +200,47 @@ nav a {
     background: dodgerblue;
 }
 
+
+.article-box {
+    display: flex;
+    flex-flow: wrap column;
+    width: 48%;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+    border-bottom: 1px dashed #000000;
+}
+
+.article-box h3 {
+    margin-top: 12px;
+}
+
+.article-box p {
+    margin-bottom: 21px;
+}
+
+.learn-button {
+    width: 130px;
+    padding: 10px 0;
+
+    border: 2px solid #000000;
+    border-radius: 10px;
+
+    color: black;
+    font-size: 1.065em;
+    text-align: center;
+    text-decoration: none;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.about.bottom-content {
+    margin-top: -9px;
+    padding: 0 4px 20px;
 }
 
 .bottom-content .text-container {
