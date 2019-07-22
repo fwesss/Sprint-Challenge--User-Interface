@@ -116,7 +116,7 @@ nav a {
     padding: 0 1% 20px;
 }
 
-.top-content .about.text-container {
+.top-content .about.text-container, .top-content .products.text-container {
     width: 96%;
     padding: 0 0.73% 20px;
 
@@ -134,6 +134,12 @@ nav a {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 2% 0;
+}
+
+.product.middle-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .middle-content h2 {
@@ -232,10 +238,59 @@ nav a {
     text-decoration: none;
 }
 
+.product-box {
+    position: relative;
+    width: 35%;
+    margin: 15px;
+    flex-grow: 1;
+}
+
+.product-box img {
+    width: 100%;
+}
+
+.product-box h3 {
+    position: absolute;
+    width: 100%;
+    padding: 102px 0;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: lightcyan;
+    opacity: 0;
+
+    font-size: 3em;
+    text-align: center;
+
+}
+
+.product-box h3:hover {
+    animation: fadein 0.75s forwards;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.8;
+    }
+}
+
+#big {
+    padding: 235px 0;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.bottom-content h3 {
+    font-size: 2.5em;
 }
 
 .about.bottom-content {
@@ -269,3 +324,5 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+
