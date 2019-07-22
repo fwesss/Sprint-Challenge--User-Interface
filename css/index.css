@@ -325,4 +325,16 @@ footer nav a {
     text-decoration: none;
 }
 
+@media screen and (max-width: 850px) {
+    .product.middle-content {
+        flex-direction: column;
+    }
 
+    .product-box {
+        width: 100%;
+    }
+
+    .product-box h3, #big {
+        padding: 244px 0;
+    }
+}
